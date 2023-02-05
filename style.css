@@ -29,7 +29,7 @@ header h1{
 
 }
 
-#new-task-form {
+#taskform {
 	display: flex;
 }
 
@@ -39,7 +39,7 @@ input, button {
 	outline: none;
 	background: none;
 }
-#new-task-input {
+#taskinput {
 	flex: 1 1 0%;
 	background-color: white;
 	padding: 1rem;
@@ -48,11 +48,11 @@ input, button {
 	color: black;
 	font-size: 1.25rem;
 }
-#new-task-input::placeholder {
+#taskinput::placeholder {
 	color:rgb(105, 96, 96);
 }
 
-#new-task-submit {
+#tasksubmit {
 	
 	font-size: 1.7rem;
 	font-weight: 700;
@@ -63,11 +63,11 @@ input, button {
 	transition: 0.4s;
 }
 
-#new-task-submit:hover{
+#tasksubmit:hover{
 	opacity: 0.8;
 
 }
-#new-task-submit:active {
+#tasksubmit:active {
 	opacity: 0.6;
 }
 
@@ -78,7 +78,7 @@ main {
 	margin: 0 auto;
 }
 
-.task-list {
+.tasklist {
 	padding: 1rem;
 }
 
