@@ -5,13 +5,14 @@ window.addEventListener('load', () => {
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
-
 		const task = input.value;
 
 		const task_ = document.createElement('div');
+
 		task_.classList.add('task');
 
 		const content_ = document.createElement('div');
+
 		content_.classList.add('content');
 
 		task_.appendChild(content_);
@@ -25,10 +26,13 @@ window.addEventListener('load', () => {
 		content_.appendChild(task_input);
 
 		const task_actions = document.createElement('div');
+
 		task_actions.classList.add('actions');
 		
 		const task_edit = document.createElement('button');
+
 		task_edit.classList.add('edit');
+        
 		task_edit.innerText = 'Edit';
 
 		const task_delete = document.createElement('button');
@@ -58,5 +62,7 @@ window.addEventListener('load', () => {
 		task_delete.addEventListener('click', (e) => {
 			list_el.removeChild(task_);
 		});
+
+		
 	});
 });
