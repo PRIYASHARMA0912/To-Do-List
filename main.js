@@ -6,6 +6,10 @@ window.addEventListener('load', () => {
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 		const task = input.value;
+		if(!task){
+			alert("Please fill out the task");
+			return;
+		}
 
 		const task_ = document.createElement('div');
 
@@ -62,6 +66,12 @@ window.addEventListener('load', () => {
 		task_delete.addEventListener('click', (e) => {
 			list_el.removeChild(task_);
 		});
+		var list = document.querySelector('.task');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'input.text') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 		
 	});
